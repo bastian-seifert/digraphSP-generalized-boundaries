@@ -10,3 +10,4 @@ The random graph models are implementations of the algorithms gathered in
 by Brenton J. Prettejohn, Matthew J. Berryman and Mark D. McDonnell1
 
 
+An example of how to use these functions can be found in the ExampleScript.m file.
