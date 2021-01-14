@@ -24,7 +24,7 @@ function [nEdgesAdded, nNotDiad,nEdgesInGraph, tToFix] = digraphStatistics(nNode
         A = randomGenerator(nNodes);
         nEdgesInGraph = [nEdgesInGraph, sum(sum(A))];
         tic;
-        [~,B] = fixSpectrumRefactored(A);
+        [~,B] = destroyJordanBlocks(A);
         tToFix = [tToFix, toc];
         edgesAdded = sum(sum(B));
         nEdgesAdded = [nEdgesAdded, edgesAdded];
